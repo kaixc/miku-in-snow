@@ -24,7 +24,6 @@ function init() {
 
     renderer = new THREE.CanvasRenderer();
     renderer.setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
-    renderer.setAttribute('style','position: fixed;left: 0;top: 0;pointer-events: none');
     material = new THREE.ParticleBasicMaterial({
         map: new THREE.Texture(particleImage)
     });
@@ -42,6 +41,8 @@ function init() {
     }
 
     container.appendChild(renderer.domElement);
+    container.firstElementChild.setAttribute('style','position: fixed;left: 0;top: 0;pointer-events: none');
+
 
     /*监听鼠标*/
     // document.addEventListener( 'mousemove', onDocumentMouseMove, false );
