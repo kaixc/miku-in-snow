@@ -41,7 +41,7 @@ function init() {
     }
 
     container.appendChild(renderer.domElement);
-    container.firstElementChild.setAttribute('style','position: fixed;left: 0;top: 0;pointer-events: none');
+    container.firstElementChild.setAttribute('style','position: fixed; z-index: 88888; left: 0; top: 0; pointer-events: none');
 
 
     /*监听鼠标*/
